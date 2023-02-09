@@ -61,7 +61,7 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
  
   ```
   
-  ###L et's put the height and txhash in the -> `config.toml`
+  ### Let's put the height and trusthash to the -> `config.toml`
   ```
   SNAP_RPC="https://teritori.web3validator.info:28157"
 
