@@ -1,7 +1,5 @@
 # Teritori_contributions
 
-# Guide_Web_Teritori
-
 ### web3validator provides much more than security! We are actively participating in the development of the Network and Community by providing informational, technical and humanitarian support!
 
 
