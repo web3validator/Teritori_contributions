@@ -57,7 +57,7 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
 
 ## Public RPC 
   ```
-  "https://teritori.web3validator.info:28157"
+  https://teritori.web3validator.info:28157
  
   ```
   
