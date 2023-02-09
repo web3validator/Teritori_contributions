@@ -76,13 +76,13 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
   sed -i.bak -e  "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.teritorid/config/config.toml
 
   ```
-  ### We clear the database 
+  ### Reset the database 
   ```
   sudo systemctl stop teritorid && 
   teritorid tendermint unsafe-reset-all --home $HOME/.teritorid --keep-addr-book
   
   ```
-  ## Restart node
+  ## Restart node and check the logs
   ```
   sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname -o cat
   ```
