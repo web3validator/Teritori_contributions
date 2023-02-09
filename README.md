@@ -10,7 +10,7 @@
 
 ## Install binary
 
-You can check new version here [Teritori releases tab](https://github.com/TERITORI/teritori-chain/releases)
+You can check new version here -> [Teritori releases tab](https://github.com/TERITORI/teritori-chain/releases)
 ```
 cd $HOME
 git clone https://github.com/TERITORI/teritori-chain.git -b v1.3.0
