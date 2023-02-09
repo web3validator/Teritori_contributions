@@ -23,7 +23,7 @@ make install
 wget https://teritori.web3validator.info/genesis_teritori.json -o $HOME/.teritorid/config/genesis.json
 
 ```
-### Adderbook
+### Addrbook
 ```
 wget https://teritori.web3validator.info/addrbook_teritori.json -o $HOME/.teritorid/config/addrbook.json
 
