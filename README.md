@@ -55,9 +55,21 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
   
 </details>
 
-## Public RPC 
+## RPC Endpoint 
   ```
   https://teritori.web3validator.info:28157
+ 
+  ```
+## LCD (Rest) API Endpoint
+
+  ```
+  https://teritori.web3validator.info:1317
+ 
+  ```
+## GRPC Endpoint
+
+  ```
+  https://teritori.web3validator.info:9090
  
   ```
   
