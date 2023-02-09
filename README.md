@@ -63,12 +63,13 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
   
   ### We get the height and txhash -> `config.toml`
   ```
-  SNAP_RPC="https://teritori.web3validator.info:28157"; \
-  peers="36c2418b7aed4e585ac3e8f138a2e5ccf0f8278f@198.244.228.17:21756"; \
+  SNAP_RPC="https://teritori.web3validator.info:28157"
+
   LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
   BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
   TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash) && \
   echo $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH
+
   sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
   s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
   s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
