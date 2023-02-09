@@ -12,7 +12,7 @@
 
 ## Install binary
 
-You can check new version here ([New_version_bin](https://github.com/TERITORI/teritori-chain/releases))
+You can check new version here [Teritori releases tab](https://github.com/TERITORI/teritori-chain/releases)
 ```
 cd $HOME
 git clone https://github.com/TERITORI/teritori-chain.git -b v1.3.0
@@ -30,7 +30,7 @@ wget https://teritori.web3validator.info/genesis_teritori.json -o $HOME/.teritor
 wget https://teritori.web3validator.info/addrbook_teritori.json -o $HOME/.teritorid/config/addrbook.json
 
 ```
-### You need to install `teritorid.service`
+### You can download  `teritorid.service`
 ```
 wget https://teritori.web3validator.info/teritorid.service -P /etc/systemd/system/
 
