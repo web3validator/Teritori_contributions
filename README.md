@@ -69,7 +69,7 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
 ## GRPC Endpoint
 
   ```
-  https://teritori.web3validator.info:9090
+  https://teritori.web3validator.info:9220
  
   ```
   
