@@ -42,6 +42,8 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
 
 ## State sync
 
+This section allows your node to join the network in a few minutes by using state sync. Note that the node will have a truncated block history starting at the height of the restored snapshot.
+
 <details >
   <summary><b>Pruning</b></summary>
   
