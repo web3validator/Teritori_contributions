@@ -20,7 +20,7 @@ make install
 ```
 ### Genesis
 ```
-wget https://teritori.web3validator.info/genesis_teritori.json -o $HOME/.teritorid/config/genesis.json
+wget http://teritori.web3validator.info/genesis_teritori.json -o $HOME/.teritorid/config/genesis.json
 
 ```
 ### Addrbook
@@ -31,7 +31,7 @@ wget https://teritori.web3validator.info/addrbook_teritori.json -o $HOME/.terito
 ```
 ### You can download  `teritorid.service`
 ```
-wget https://teritori.web3validator.info/teritorid.service -P /etc/systemd/system/
+wget http://teritori.web3validator.info/teritorid.service -P /etc/systemd/system/
 
 ```
 If you want to quickly catch up with the network, use this [State Sync](https://github.com/web3validator/Teritori_contributions#state-sync))
@@ -40,19 +40,19 @@ sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname 
 ```
 ## RPC Endpoint 
   ```
-  https://teritori.web3validator.info:28157
+  http://teritori.web3validator.info:28157
  
   ```
 ## LCD (Rest) API Endpoint
 
   ```
-  https://teritori.web3validator.info:1317
+  http://teritori.web3validator.info:1317
  
   ```
 ## GRPC Endpoint
 
   ```
-  https://teritori.web3validator.info:9220
+  http://teritori.web3validator.info:9220
  
   ```
 
@@ -78,7 +78,7 @@ This section allows your node to join the network in a few minutes by using stat
   
   ### Let's put the height and trusthash to the -> `config.toml`
   ```
-  SNAP_RPC="https://teritori.web3validator.info:28157"
+  SNAP_RPC="http://teritori.web3validator.info:28157"
 
   LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
   BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
