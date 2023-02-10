@@ -24,6 +24,7 @@ wget https://teritori.web3validator.info/genesis_teritori.json -o $HOME/.teritor
 
 ```
 ### Addrbook
+it will help you to connect to the network and start receiving blocks
 ```
 wget https://teritori.web3validator.info/addrbook_teritori.json -o $HOME/.teritorid/config/addrbook.json
 
