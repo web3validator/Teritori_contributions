@@ -33,11 +33,27 @@ wget https://teritori.web3validator.info/addrbook_teritori.json -o $HOME/.terito
 wget https://teritori.web3validator.info/teritorid.service -P /etc/systemd/system/
 
 ```
-If you want to quickly catch up with the network, use this [State Sync](https://github.com/MaxMavaIll/Guide_Web_Teritori#state-sync)
+If you want to quickly catch up with the network, use this [State Sync](https://github.com/web3validator/Teritori_contributions#state-sync))
 ```
 sudo systemctl start teritorid && sudo journalctl -u teritorid -f --no-hostname -o cat
 ```
+## RPC Endpoint 
+  ```
+  https://teritori.web3validator.info:28157
+ 
+  ```
+## LCD (Rest) API Endpoint
 
+  ```
+  https://teritori.web3validator.info:1317
+ 
+  ```
+## GRPC Endpoint
+
+  ```
+  https://teritori.web3validator.info:9220
+ 
+  ```
 
 
 ## State sync
@@ -57,23 +73,7 @@ This section allows your node to join the network in a few minutes by using stat
   
 </details>
 
-## RPC Endpoint 
-  ```
-  https://teritori.web3validator.info:28157
- 
-  ```
-## LCD (Rest) API Endpoint
 
-  ```
-  https://teritori.web3validator.info:1317
- 
-  ```
-## GRPC Endpoint
-
-  ```
-  https://teritori.web3validator.info:9220
- 
-  ```
   
   ### Let's put the height and trusthash to the -> `config.toml`
   ```
